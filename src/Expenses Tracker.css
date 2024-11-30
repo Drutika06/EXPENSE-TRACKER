@@ -1,0 +1,148 @@
+/* Basic App styling */
+
+.App {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+/* Form container */
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+
+/* Input styling */
+
+input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* Button styling */
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* List and Expense item styling */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+/* Expense item layout */
+
+li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Button inside list items (for edit and delete) */
+
+li button {
+    background-color: #dc3545;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+
+/* Headings and overall typography */
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .App {
+        padding: 30px 10px;
+    }
+    form {
+        width: 100%;
+    }
+    input {
+        margin: 8px 0;
+    }
+    button {
+        padding: 10px 18px;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+    li button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
